@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aministrators",
+      "handler": "aministrator.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aministrators/count",
+      "handler": "aministrator.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aministrators/:id",
+      "handler": "aministrator.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/aministrators",
+      "handler": "aministrator.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aministrators/:id",
+      "handler": "aministrator.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aministrators/:id",
+      "handler": "aministrator.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

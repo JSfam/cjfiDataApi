@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aministrators",
+  "info": {
+    "name": "Aministrator"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "userId": {
+      "type": "string",
+      "unique": true
+    },
+    "userFirstName": {
+      "type": "string"
+    },
+    "userMiddleName": {
+      "type": "string"
+    },
+    "userLastName": {
+      "type": "string"
+    },
+    "userName": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    },
+    "userEmail": {
+      "type": "string"
+    },
+    "userPosition": {
+      "type": "string"
+    },
+    "admission_transactions": {
+      "via": "aministrators",
+      "collection": "admission-transaction"
+    }
+  }
+}

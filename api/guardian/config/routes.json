@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/guardians",
+      "handler": "guardian.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/guardians/count",
+      "handler": "guardian.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/guardians/:id",
+      "handler": "guardian.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/guardians",
+      "handler": "guardian.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/guardians/:id",
+      "handler": "guardian.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/guardians/:id",
+      "handler": "guardian.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

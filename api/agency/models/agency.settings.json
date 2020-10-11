@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agencies",
+  "info": {
+    "name": "agencyOrGruardian",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "agencyId": {
+      "type": "string"
+    },
+    "agencyName": {
+      "type": "string"
+    },
+    "agencyAddress": {
+      "type": "string"
+    },
+    "agencyContactNo": {
+      "type": "integer"
+    },
+    "agencyContactPerson": {
+      "type": "string"
+    },
+    "agencyContactPersonEmail": {
+      "type": "email"
+    },
+    "agencyEmail": {
+      "type": "email"
+    },
+    "agencyTellNo": {
+      "type": "integer"
+    },
+    "agencyContactPersonNo": {
+      "type": "integer"
+    },
+    "clients": {
+      "collection": "client",
+      "via": "agency"
+    }
+  }
+}

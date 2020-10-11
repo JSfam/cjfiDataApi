@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admission_transaction_s",
+  "info": {
+    "name": "AdmissionTransaction "
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "admissionTrsanctionId": {
+      "type": "string",
+      "unique": true
+    },
+    "clientId": {
+      "collection": "client",
+      "via": "admission_transaction"
+    },
+    "aministrators": {
+      "collection": "aministrator",
+      "via": "admission_transactions",
+      "dominant": true
+    },
+    "documets": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "status": {
+      "type": "json"
+    },
+    "remarks": {
+      "type": "json"
+    }
+  }
+}

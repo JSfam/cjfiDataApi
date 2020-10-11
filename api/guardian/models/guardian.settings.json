@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guardians",
+  "info": {
+    "name": "guardian"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "guardianID": {
+      "type": "string"
+    },
+    "guardianFirstName": {
+      "type": "string"
+    },
+    "guardianLastName": {
+      "type": "string"
+    },
+    "guardianMiddleName": {
+      "type": "string"
+    },
+    "guardianBirthDay": {
+      "type": "date"
+    },
+    "guardianAge": {
+      "type": "integer"
+    },
+    "guardianContactNo": {
+      "type": "integer"
+    },
+    "guardianeEmail": {
+      "type": "email"
+    },
+    "guradianAddress": {
+      "type": "string"
+    },
+    "guradianTelNo": {
+      "type": "integer"
+    }
+  }
+}

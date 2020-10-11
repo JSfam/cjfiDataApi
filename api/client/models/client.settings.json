@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "name": "Client",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "clientID": {
+      "type": "string",
+      "unique": true
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "middleName": {
+      "type": "string"
+    },
+    "birthDate": {
+      "type": "date"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "clientType": {
+      "type": "enumeration",
+      "enum": [
+        "WalkIn",
+        "Refferal"
+      ]
+    },
+    "agency": {
+      "via": "clients",
+      "model": "agency"
+    },
+    "admission_transaction": {
+      "via": "clientId",
+      "model": "admission-transaction"
+    }
+  }
+}
